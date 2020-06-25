@@ -1474,14 +1474,14 @@ namespace iOSCharts
         [DesignatedInitializer]
         IntPtr Constructor([NullAllowed] string label);
 
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
 
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values;
-        [Export("initWithValues:")]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values);
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values;
+        [Export("initWithEntries:")]
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries);
 
         // @property(copy, nonatomic) NSArray<ChartDataEntry *> * _Nonnull values;
         [Export("values", ArgumentSemantic.Copy)]
@@ -1610,20 +1610,20 @@ namespace iOSCharts
         [DesignatedInitializer]
         IntPtr Constructor([NullAllowed] string label);
 
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
     }
 
     // @interface BarChartDataSet : BarLineScatterCandleBubbleChartDataSet <IInterfaceBarChartDataSet>
     [BaseType(typeof(BarLineScatterCandleBubbleChartDataSet), Name = "_TtC6Charts15BarChartDataSet")]
     interface BarChartDataSet : InterfaceBarChartDataSet
     {
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
 
         // @property(readonly, nonatomic) NSInteger stackSize;
         [Export("stackSize")]
@@ -2765,10 +2765,10 @@ namespace iOSCharts
         [DesignatedInitializer]
         IntPtr Constructor([NullAllowed] string label);
 
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
     }
 
     // @interface BubbleChartRenderer : BarLineScatterCandleBubbleChartRenderer
@@ -3040,20 +3040,20 @@ namespace iOSCharts
         [DesignatedInitializer]
         IntPtr Constructor([NullAllowed] string label);
 
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
     }
 
     // @interface CandleChartDataSet : LineScatterCandleRadarChartDataSet <IInterfaceCandleChartDataSet>
     [BaseType(typeof(LineScatterCandleRadarChartDataSet), Name = "_TtC6Charts18CandleChartDataSet")]
     interface CandleChartDataSet : InterfaceCandleChartDataSet
     {
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
 
         // -(void)calcMinMaxYWithEntry:(ChartDataEntry * _Nonnull)e;
         [Export("calcMinMaxYWithEntry:")]
@@ -4680,20 +4680,20 @@ namespace iOSCharts
         [DesignatedInitializer]
         IntPtr Constructor([NullAllowed] string label);
 
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
     }
 
     // @interface LineChartDataSet : LineRadarChartDataSet <IInterfaceLineChartDataSet>
     [BaseType(typeof(LineRadarChartDataSet), Name = "_TtC6Charts16LineChartDataSet")]
     interface LineChartDataSet : InterfaceLineChartDataSet
     {
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
 
         // @property(nonatomic) enum LineChartMode mode;
         [Export("mode", ArgumentSemantic.Assign)]
@@ -5044,10 +5044,10 @@ namespace iOSCharts
     [BaseType(typeof(ChartDataSet), Name = "_TtC6Charts15PieChartDataSet")]
     interface PieChartDataSet : InterfacePieChartDataSet
     {
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
 
         // @property(nonatomic) CGFloat sliceSpace;
         [Export("sliceSpace")]
@@ -5506,10 +5506,10 @@ namespace iOSCharts
     [BaseType(typeof(LineRadarChartDataSet), Name = "_TtC6Charts17RadarChartDataSet")]
     interface RadarChartDataSet : InterfaceRadarChartDataSet
     {
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
 
         // @property(nonatomic) BOOL drawHighlightCircleEnabled;
         [Export("drawHighlightCircleEnabled")]
@@ -5757,10 +5757,10 @@ namespace iOSCharts
         [DesignatedInitializer]
         IntPtr Constructor([NullAllowed] string label);
 
-        // -(instancetype _Nonnull)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
-        [Export("initWithValues:label:")]
+        // -(instancetype _Nonnull)initWithEntries:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label __attribute__((objc_designated_initializer));
+        [Export("initWithEntries:label:")]
         [DesignatedInitializer]
-        IntPtr Constructor([NullAllowed] ChartDataEntry[] values, [NullAllowed] string label);
+        IntPtr Constructor([NullAllowed] ChartDataEntry[] entries, [NullAllowed] string label);
     }
 
     // @interface ScatterChartRenderer : LineScatterCandleRadarChartRenderer
