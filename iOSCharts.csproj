@@ -12,7 +12,7 @@
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>iFitiOSCharts</PackageId>
-    <PackageVersion>3.4.0.1</PackageVersion>
+    <PackageVersion>3.6.0.0</PackageVersion>
     <Authors>Flash3001</Authors>
     <Description>Xcode 11 / Swift 5 iOSCharts binding project</Description>
   </PropertyGroup>
